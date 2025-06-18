@@ -1,5 +1,4 @@
 {
-  "note": "trigger redeploy",
   "name": "classroom-notes-app",
   "version": "0.1.0",
   "private": true,
