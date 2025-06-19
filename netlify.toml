@@ -1,0 +1,17 @@
+# netlify.toml
+
+[build]
+  # this runs your Next.js build + static export
+  command = "npm run build"
+  # this folder ("out") is where `next export` will emit your static site
+  publish = "out"
+
+# If you ever need SPA‐style client‐side routing,
+# uncomment and tweak this:
+# [[redirects]]
+#   from = "/*"
+#   to   = "/index.html"
+#   status = 200
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

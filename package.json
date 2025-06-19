@@ -4,30 +4,34 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.5.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "next-auth": "4.23.2",
-    "pg": "8.11.3",
+    "@prisma/client": "^6.10.0",
     "bcryptjs": "2.4.3",
     "bootstrap": "5.3.2",
     "bootstrap-icons": "1.11.1",
-    "fabric": "5.3.0"
+    "fabric": "^5.3.0",
+    "mysql2": "^3.14.1",
+    "next": "13.5.4",
+    "next-auth": "4.23.2",
+    "pg": "8.11.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "2.4.4",
+    "@types/fabric": "^5.3.4",
     "@types/node": "20.8.6",
+    "@types/pg": "8.10.5",
     "@types/react": "18.2.28",
     "@types/react-dom": "18.2.13",
-    "@types/pg": "8.10.5",
-    "@types/bcryptjs": "2.4.4",
-    "@types/fabric": "5.3.4",
-    "typescript": "5.2.2",
     "eslint": "8.51.0",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "prisma": "^6.10.0",
+    "typescript": "5.2.2"
   }
 }
